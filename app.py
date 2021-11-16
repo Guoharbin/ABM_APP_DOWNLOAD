@@ -84,5 +84,7 @@ if submit:
         st.write(webbrowser.get())
         #webbrowser.get('chrome').open(url,new=0,)
         webbrowser.open(url,new=0,)
+        webbrowser.open_new(url)
+        webbrowser.open_new_tab(url)
     else:
         st.warning('apple id格式有误，请检查！')
