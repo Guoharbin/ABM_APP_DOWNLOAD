@@ -4,7 +4,8 @@ import re
 import time
 import webbrowser
 
-chromepath = r"C:\Program Files (x86)\Google\Chrome\Application\chrome.exe"
+chromepath = r"C:\Program Files\Google\Chrome\Application\chrome.exe"
+#chromepath = r"C:\Program Files (x86)\Google\Chrome\Application\chrome.exe"
 webbrowser.register('chrome', None, webbrowser.BackgroundBrowser(chromepath))  
 
 #邮箱格式验证
@@ -82,7 +83,7 @@ if submit:
         url = "https://apps.apple.com/cn/app/beddit-for-model-3-5/id1411596157"
         st.write(url)
         st.write(webbrowser.get())
-        #webbrowser.get('chrome').open(url,new=0,)
+        webbrowser.get('chrome').open(url,new=0,)
         webbrowser.open(url,new=0,)
         webbrowser.open_new(url)
         webbrowser.open_new_tab(url)
