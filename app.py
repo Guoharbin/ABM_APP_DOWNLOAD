@@ -83,7 +83,7 @@ if submit:
         #重定向到下载连接
         url = "https://apps.apple.com/cn/app/beddit-for-model-3-5/id1411596157"
         st.write(url)
-        st.write(webbrowser.get())
+        #st.write(webbrowser.get())
         #webbrowser.get('chrome').open(url,new=0,)
         webbrowser.open(url,new=0,)
         webbrowser.open_new(url)
