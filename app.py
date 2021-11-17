@@ -3,6 +3,7 @@ import sqlite3
 import re
 import time
 import webbrowser
+from link_button import link_button
 
 #chromepath = r"C:\Program Files\Google\Chrome\Application\chrome.exe"
 #chromepath = r"C:\Program Files (x86)\Google\Chrome\Application\chrome.exe"
@@ -87,5 +88,6 @@ if submit:
         webbrowser.open(url,new=0,)
         webbrowser.open_new(url)
         webbrowser.open_new_tab(url)
+        link_button("点我跳转",url)
     else:
         st.warning('apple id格式有误，请检查！')
