@@ -1,2 +1,1 @@
-tornado==6.1.0
-link-button==1.0.0
+link-button
